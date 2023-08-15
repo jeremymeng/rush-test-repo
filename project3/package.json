@@ -1,0 +1,17 @@
+{
+  "name": "project3",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "q": "1.5.1",
+    "@scope/testDep": "https://github.com/jonschlinkert/pad-left/tarball/2.1.0",
+    "@_ts/min": "npm:typescript@~4.2.4",
+    "@_ts/max": "npm:typescript@latest"
+  }
+}
