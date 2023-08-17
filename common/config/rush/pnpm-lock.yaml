@@ -1,63 +1,73 @@
-lockfileVersion: 5.4
+lockfileVersion: '6.0'
 
-specifiers:
-  '@_ts/max': npm:typescript@latest
-  '@_ts/min': npm:typescript@~4.2.4
-  '@rush-temp/project1': file:./projects/project1.tgz
-  '@rush-temp/project2': file:./projects/project2.tgz
-  '@rush-temp/project3': file:./projects/project3.tgz
-  '@scope/testDep': https://github.com/jonschlinkert/pad-left/tarball/2.1.0
-  jssha: ^3.1.0
-  pad-left: ^1.0.0
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
 
 dependencies:
-  '@_ts/max': /typescript/5.1.6
-  '@_ts/min': /typescript/4.2.4
-  '@rush-temp/project1': file:projects/project1.tgz
-  '@rush-temp/project2': file:projects/project2.tgz
-  '@rush-temp/project3': file:projects/project3.tgz
-  '@scope/testDep': '@github.com/jonschlinkert/pad-left/tarball/2.1.0'
-  jssha: 3.3.1
-  pad-left: 1.0.2
+  '@_ts/max':
+    specifier: npm:typescript@latest
+    version: /typescript@5.1.6
+  '@_ts/min':
+    specifier: npm:typescript@~4.2.4
+    version: /typescript@4.2.4
+  '@rush-temp/project1':
+    specifier: file:./projects/project1.tgz
+    version: file:projects/project1.tgz
+  '@rush-temp/project2':
+    specifier: file:./projects/project2.tgz
+    version: file:projects/project2.tgz
+  '@rush-temp/project3':
+    specifier: file:./projects/project3.tgz
+    version: file:projects/project3.tgz
+  '@scope/testDep':
+    specifier: https://github.com/jonschlinkert/pad-left/tarball/2.1.0
+    version: '@github.com/jonschlinkert/pad-left/tarball/2.1.0'
+  jssha:
+    specifier: ^3.1.0
+    version: 3.1.0
+  pad-left:
+    specifier: ^1.0.0
+    version: 1.0.0
 
 packages:
 
-  /jquery/1.12.3:
+  /jquery@1.12.3:
     resolution: {integrity: sha512-FzM42/Ew+Hb8ha2OlhHRBLgWIZS32gZ0+NvWTf+ZvVvGaIlJkOiXQyb7VBjv4L6fJfmTrRf3EsAmbfsHDhfemw==}
     dev: false
 
-  /jquery/2.2.4:
+  /jquery@2.2.4:
     resolution: {integrity: sha512-lBHj60ezci2u1v2FqnZIraShGgEXq35qCzMv4lITyHGppTnA13rwR0MgwyNJh9TnDs3aXUvd1xjAotfraMHX/Q==}
     dev: false
 
-  /jssha/3.3.1:
-    resolution: {integrity: sha512-VCMZj12FCFMQYcFLPRm/0lOBbLi8uM2BhXPTqw3U4YAfs4AZfiApOoBLoN8cQE60Z50m1MYMTQVCfgF/KaCVhQ==}
+  /jssha@3.1.0:
+    resolution: {integrity: sha512-tPCmr8xSLd8ug6N51k0rbF1tAQWZz1i/uCVHpCH9dl+Te+wM/T375R3lTexP3bk1HPmQ+NlJHQPYLmYuyk6slA==}
     dev: false
 
-  /pad-left/1.0.2:
-    resolution: {integrity: sha512-saxSV1EYAytuZDtQYEwi0DPzooG6aN18xyHrnJtzwjVwmMauzkEecd7hynVJGolNGk1Pl9tltmZqfze4TZTCxg==}
+  /pad-left@1.0.0:
+    resolution: {integrity: sha512-VIgD7DviaDL6QCj+jEU1jpjXlu0z/sl4yzAmFLmM7YvM3ZRKLaxZAe+sZ1hKHeYUeI4zoZHfMetDpazu/uAwsw==}
     engines: {node: '>=0.10.0'}
     dependencies:
       repeat-string: 1.6.1
     dev: false
 
-  /q/1.5.1:
+  /q@1.5.1:
     resolution: {integrity: sha512-kV/CThkXo6xyFEZUugw/+pIOywXcDbFYgSct5cT3gqlbkBE1SJdwy6UQoZvodiWF/ckQLZyDE/Bu1M6gVu5lVw==}
     engines: {node: '>=0.6.0', teleport: '>=0.2.0'}
     dev: false
 
-  /repeat-string/1.6.1:
+  /repeat-string@1.6.1:
     resolution: {integrity: sha512-PV0dzCYDNfRi1jCDbJzpW7jNNDRuCOG/jI5ctQcGKt/clZD+YcPS3yIlWuTJMmESC8aevCFmWJy5wjAFgNqN6w==}
     engines: {node: '>=0.10'}
     dev: false
 
-  /typescript/4.2.4:
+  /typescript@4.2.4:
     resolution: {integrity: sha512-V+evlYHZnQkaz8TRBuxTA92yZBPotr5H+WhQ7bD3hZUndx5tGOa1fuCgeSjxAzM1RiN5IzvadIXTVefuuwZCRg==}
     engines: {node: '>=4.2.0'}
     hasBin: true
     dev: false
 
-  /typescript/5.1.6:
+  /typescript@5.1.6:
     resolution: {integrity: sha512-zaWCozRZ6DLEWAWFrVDz1H6FVXzUSfTy5FUMWsQlU8Ym5JP9eO4xkTIROFCQvhQf61z6O/G6ugw3SgAnvvm+HA==}
     engines: {node: '>=14.17'}
     hasBin: true
@@ -78,7 +88,7 @@ packages:
     version: 0.0.0
     dependencies:
       jquery: 1.12.3
-      pad-left: 1.0.2
+      pad-left: 1.0.0
     dev: false
 
   file:projects/project2.tgz:
@@ -95,9 +105,9 @@ packages:
     name: '@rush-temp/project3'
     version: 0.0.0
     dependencies:
-      '@_ts/max': /typescript/5.1.6
-      '@_ts/min': /typescript/4.2.4
+      '@_ts/max': /typescript@5.1.6
+      '@_ts/min': /typescript@4.2.4
       '@scope/testDep': '@github.com/jonschlinkert/pad-left/tarball/2.1.0'
-      jssha: 3.3.1
+      jssha: 3.1.0
       q: 1.5.1
     dev: false
